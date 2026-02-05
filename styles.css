@@ -67,7 +67,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 16px 0;
+  padding: 12px 0;
   gap: 24px;
   flex-wrap: wrap;
 }
@@ -78,13 +78,8 @@ a {
   align-items: center;
 }
 
-.logo-mark {
-  width: 48px;
-  height: 48px;
-}
-
 .logo-type {
-  width: 160px;
+  width: min(200px, 42vw);
   height: auto;
 }
 
@@ -239,6 +234,26 @@ a {
   gap: 6px;
 }
 
+.feature-list {
+  list-style: none;
+  padding-left: 0;
+  display: grid;
+  gap: 10px;
+  color: var(--muted);
+}
+
+.feature-list li {
+  position: relative;
+  padding-left: 20px;
+}
+
+.feature-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--purple-strong);
+}
+
 .split {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -252,6 +267,120 @@ a {
   border: 1px solid rgba(150, 134, 172, 0.15);
   display: grid;
   gap: 14px;
+}
+
+.section-body-wide {
+  margin-bottom: 32px;
+}
+
+.muted-note {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.catalog-card {
+  background: var(--white);
+  border-radius: 18px;
+  padding: 22px;
+  border: 1px solid rgba(120, 184, 175, 0.18);
+  box-shadow: 0 14px 32px rgba(27, 27, 33, 0.08);
+  display: grid;
+  gap: 10px;
+  position: relative;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.catalog-card::after {
+  content: "詳細を見る →";
+  font-size: 12px;
+  color: var(--purple-strong);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.catalog-card:hover,
+.catalog-card:focus-visible {
+  transform: translateY(-4px);
+  border-color: rgba(150, 134, 172, 0.45);
+  box-shadow: 0 20px 36px rgba(27, 27, 33, 0.12);
+}
+
+.catalog-card:focus-visible {
+  outline: 2px solid rgba(150, 134, 172, 0.6);
+  outline-offset: 4px;
+}
+
+.catalog-illustration {
+  background: rgba(182, 169, 204, 0.16);
+  border: 1px dashed rgba(150, 134, 172, 0.4);
+  color: var(--purple-strong);
+  font-size: 12px;
+  border-radius: 14px;
+  padding: 16px;
+  text-align: center;
+}
+
+.catalog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.catalog-header h3 {
+  font-size: 16px;
+}
+
+.badge {
+  background: rgba(150, 134, 172, 0.15);
+  color: var(--purple-strong);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.badge-data {
+  background: rgba(120, 184, 175, 0.18);
+  color: var(--green-strong);
+}
+
+.badge-utility {
+  background: rgba(27, 27, 33, 0.08);
+  color: var(--muted);
+}
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.detail-card {
+  background: var(--white);
+  border-radius: 22px;
+  padding: 26px;
+  border: 1px solid rgba(150, 134, 172, 0.18);
+  box-shadow: 0 16px 36px rgba(27, 27, 33, 0.08);
+  display: grid;
+  gap: 14px;
+}
+
+.detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
 }
 
 .accent {
