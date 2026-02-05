@@ -1,6 +1,0 @@
-# Allow all crawlers
-User-agent: *
-Allow: /
-
-# Sitemap location (placeholder URL)
-Sitemap: https://example.com/sitemap.xml
