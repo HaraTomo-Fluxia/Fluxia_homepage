@@ -159,30 +159,12 @@ a {
   box-shadow: 0 24px 60px rgba(150, 134, 172, 0.15);
 }
 
-.hero-card-inner {
-  background: var(--white);
+.hero-image {
+  width: 100%;
   border-radius: 18px;
-  padding: 32px;
-  display: grid;
-  gap: 16px;
-}
-
-.hero-card h2 {
-  font-size: 22px;
-}
-
-.hero-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.hero-tags span {
-  background: rgba(120, 184, 175, 0.15);
-  padding: 6px 12px;
-  border-radius: 999px;
-  font-size: 12px;
-  color: var(--muted);
+  border: 1px solid rgba(150, 134, 172, 0.2);
+  background: var(--white);
+  padding: 12px;
 }
 
 .section {
@@ -216,11 +198,11 @@ a {
 .card {
   background: var(--white);
   border-radius: 20px;
-  padding: 28px;
+  padding: 32px;
   border: 1px solid rgba(120, 184, 175, 0.2);
   box-shadow: 0 16px 40px rgba(27, 27, 33, 0.08);
   display: grid;
-  gap: 16px;
+  gap: 18px;
 }
 
 .card h3 {
@@ -231,7 +213,7 @@ a {
   padding-left: 18px;
   color: var(--muted);
   display: grid;
-  gap: 6px;
+  gap: 8px;
 }
 
 .feature-list {
@@ -374,6 +356,7 @@ a {
   box-shadow: 0 16px 36px rgba(27, 27, 33, 0.08);
   display: grid;
   gap: 14px;
+  position: relative;
 }
 
 .detail-header {
@@ -383,9 +366,66 @@ a {
   gap: 12px;
 }
 
+.detail-card-inner {
+  position: relative;
+  min-height: 360px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+}
+
+.detail-card-face {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  gap: 14px;
+  backface-visibility: hidden;
+  padding: 0 2px;
+}
+
+.detail-card-back {
+  transform: rotateY(180deg);
+  justify-items: center;
+  align-content: center;
+  padding: 12px;
+}
+
+.detail-card-back img {
+  border-radius: 18px;
+  border: 1px solid rgba(150, 134, 172, 0.25);
+  box-shadow: 0 12px 28px rgba(27, 27, 33, 0.12);
+}
+
+.detail-card.is-flipped .detail-card-inner {
+  transform: rotateY(180deg);
+}
+
+.detail-toggle {
+  align-self: start;
+  justify-self: start;
+  margin-top: auto;
+  background: rgba(150, 134, 172, 0.12);
+  border: 1px solid rgba(150, 134, 172, 0.35);
+  color: var(--purple-strong);
+  border-radius: 999px;
+  padding: 6px 16px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+
+.detail-toggle-back {
+  margin-top: 16px;
+}
+
 .accent {
   color: var(--purple-strong);
   font-weight: 500;
+}
+
+.message-signature {
+  font-weight: 600;
+  color: var(--ink);
 }
 
 .site-footer {
