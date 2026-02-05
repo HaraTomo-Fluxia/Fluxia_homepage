@@ -280,24 +280,11 @@ a {
   color: inherit;
 }
 
-.catalog-card::after {
-  content: "詳細を見る →";
-  font-size: 12px;
-  color: var(--purple-strong);
-  font-weight: 600;
-  letter-spacing: 0.04em;
-}
-
 .catalog-card:hover,
 .catalog-card:focus-visible {
   transform: translateY(-4px);
   border-color: rgba(150, 134, 172, 0.45);
   box-shadow: 0 20px 36px rgba(27, 27, 33, 0.12);
-}
-
-.catalog-card:focus-visible {
-  outline: 2px solid rgba(150, 134, 172, 0.6);
-  outline-offset: 4px;
 }
 
 .catalog-illustration {
@@ -342,82 +329,6 @@ a {
   color: var(--muted);
 }
 
-.detail-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
-}
-
-.detail-card {
-  background: var(--white);
-  border-radius: 22px;
-  padding: 26px;
-  border: 1px solid rgba(150, 134, 172, 0.18);
-  box-shadow: 0 16px 36px rgba(27, 27, 33, 0.08);
-  display: grid;
-  gap: 14px;
-  position: relative;
-}
-
-.detail-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 12px;
-}
-
-.detail-card-inner {
-  position: relative;
-  min-height: 360px;
-  transform-style: preserve-3d;
-  transition: transform 0.5s ease;
-}
-
-.detail-card-face {
-  position: absolute;
-  inset: 0;
-  display: grid;
-  gap: 14px;
-  backface-visibility: hidden;
-  padding: 0 2px;
-}
-
-.detail-card-back {
-  transform: rotateY(180deg);
-  justify-items: center;
-  align-content: center;
-  padding: 12px;
-}
-
-.detail-card-back img {
-  border-radius: 18px;
-  border: 1px solid rgba(150, 134, 172, 0.25);
-  box-shadow: 0 12px 28px rgba(27, 27, 33, 0.12);
-}
-
-.detail-card.is-flipped .detail-card-inner {
-  transform: rotateY(180deg);
-}
-
-.detail-toggle {
-  align-self: start;
-  justify-self: start;
-  margin-top: auto;
-  background: rgba(150, 134, 172, 0.12);
-  border: 1px solid rgba(150, 134, 172, 0.35);
-  color: var(--purple-strong);
-  border-radius: 999px;
-  padding: 6px 16px;
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  cursor: pointer;
-}
-
-.detail-toggle-back {
-  margin-top: 16px;
-}
-
 .accent {
   color: var(--purple-strong);
   font-weight: 500;
@@ -426,6 +337,38 @@ a {
 .message-signature {
   font-weight: 600;
   color: var(--ink);
+}
+
+.contact-cta {
+  display: grid;
+  gap: 24px;
+}
+
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.contact-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  border-radius: 999px;
+  background: linear-gradient(120deg, var(--purple-strong), var(--green-strong));
+  color: var(--white);
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  border: 1px solid transparent;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-button:hover,
+.contact-button:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(27, 27, 33, 0.18);
 }
 
 .site-footer {
