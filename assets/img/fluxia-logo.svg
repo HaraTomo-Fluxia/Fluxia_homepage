@@ -1,0 +1,11 @@
+<!-- Fluxia logo placeholder: replace with official asset if needed -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="fluxia-gradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8dc2bc" />
+      <stop offset="100%" stop-color="#8d96c2" />
+    </linearGradient>
+  </defs>
+  <circle cx="32" cy="32" r="24" fill="none" stroke="url(#fluxia-gradient)" stroke-width="6" />
+  <circle cx="32" cy="32" r="20" fill="none" stroke="url(#fluxia-gradient)" stroke-width="2" opacity="0.6" />
+</svg>
