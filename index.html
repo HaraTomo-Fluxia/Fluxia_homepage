@@ -50,15 +50,11 @@
             </p>
           </div>
           <div class="hero-card">
-            <div class="hero-card-inner">
-              <p>AI × Data × Implementation</p>
-              <h2>美しく、静かに、世界の解像度を上げる。</h2>
-              <div class="hero-tags">
-                <span>AIシステム開発</span>
-                <span>データ分析</span>
-                <span>プロダクト設計</span>
-              </div>
-            </div>
+            <img
+              class="hero-image"
+              src="assets/hero-visual.svg"
+              alt="美しく静かな光のイメージ"
+            />
           </div>
         </div>
       </section>
@@ -93,37 +89,34 @@
             <article class="card">
               <h3>AIを活用したシステム・アプリケーション開発</h3>
               <p>
-                AIは、単なる自動化の手段ではなく、人の理解や発想の幅を拡張するための道具だと考えています。
-                Fluxiaでは、情報を扱いやすくし、考える余地を増やす形でシステムに組み込みます。
+                人の理解や発想を広げる道具として、AIを自然に溶け込ませます。
+                必要な情報が静かに届き、考える余白が残る体験を設計します。
               </p>
               <ul class="feature-list">
-                <li>AIを見せるより、自然に使われ意味を持つ形で動くことを重視</li>
-                <li>テキスト・画像・ログなど多様な情報をまとめて扱える構成</li>
-                <li>PoCからプロトタイプ、実運用を見据えた構成まで伴走</li>
+                <li>AIを主張しすぎず、自然に使われる設計</li>
+                <li>PoCからプロトタイプ、実運用を見据えた伴走</li>
               </ul>
             </article>
             <article class="card">
               <h3>データ分析とインサイト創出</h3>
               <p>
-                データ分析は、世界を少し解像度高く見るための手段です。気づかれていない傾向や、
-                次の一歩につながるヒントを整理し、意思決定やプロダクトの方向性を自然と見えてくる形へ。
+                データから「次の一歩」を読み取り、迷いを減らす材料へ整えます。
+                見落とされがちな傾向を、意思決定につながる言葉へ変換します。
               </p>
               <ul class="feature-list">
-                <li>お客様がすでに持つデータから、傾向/構造/次の一手のヒントを発見</li>
-                <li>分析結果を体験やシステムへ接続し、実装まで伴走</li>
-                <li>分析は資料で終わらせず、改善のサイクルにつなげる</li>
+                <li>既存データから傾向とヒントを抽出</li>
+                <li>分析を体験へ接続し、実装まで伴走</li>
               </ul>
             </article>
             <article class="card">
               <h3>アプリ開発・実装支援</h3>
               <p>
-                体験を形にするためのUI/UX設計からアプリ実装まで、一貫して進めます。
-                AIやデータの結果が、現場で使われる動線に落ちることを重視します。
+                体験設計から実装まで一貫して進め、使われる動線に落とし込みます。
+                使う人の手触りに合わせて、軽やかに磨き込みます。
               </p>
               <ul class="feature-list">
-                <li>プロダクト構想の整理と体験設計の具体化</li>
+                <li>体験設計の具体化とプロトタイプ作成</li>
                 <li>軽量な実装で検証し、使いながら改善</li>
-                <li>教育・エンタメ領域のプロトタイプにも対応</li>
               </ul>
             </article>
           </div>
@@ -254,117 +247,213 @@
           </div>
           <div class="detail-grid">
             <article id="detail-ai-summary" class="detail-card">
-              <div class="detail-header">
-                <h3>AI要約・整理（議事録/資料）</h3>
-                <span class="badge">AI</span>
+              <div class="detail-card-inner">
+                <div class="detail-card-face detail-card-front">
+                  <div class="detail-header">
+                    <h3>AI要約・整理（議事録/資料）</h3>
+                    <span class="badge">AI</span>
+                  </div>
+                  <p>
+                    会議ログや資料を読みやすい要点へまとめ、意思決定が早く進むように整えます。
+                    共有しやすいフォーマットを前提に設計します。
+                  </p>
+                  <ul class="feature-list">
+                    <li>議題ごとの要約や決定事項の抽出</li>
+                    <li>共有先に合わせたテンプレート出力</li>
+                    <li>次のアクションを明確にする整理</li>
+                  </ul>
+                  <button class="detail-toggle" type="button">イメージを見る</button>
+                </div>
+                <div class="detail-card-face detail-card-back">
+                  <img
+                    src="assets/poc-preview.svg"
+                    alt="要約結果のプロダクトイメージ"
+                  />
+                  <button class="detail-toggle detail-toggle-back" type="button">戻る</button>
+                </div>
               </div>
-              <p>
-                会議ログや資料を読みやすい要点へまとめ、意思決定が早く進むように整えます。
-                共有しやすいフォーマットを前提に設計します。
-              </p>
-              <ul class="feature-list">
-                <li>議題ごとの要約や決定事項の抽出</li>
-                <li>共有先に合わせたテンプレート出力</li>
-                <li>次のアクションを明確にする整理</li>
-              </ul>
             </article>
             <article id="detail-knowledge-search" class="detail-card">
-              <div class="detail-header">
-                <h3>社内ナレッジ検索（軽量）</h3>
-                <span class="badge badge-data">Data</span>
+              <div class="detail-card-inner">
+                <div class="detail-card-face detail-card-front">
+                  <div class="detail-header">
+                    <h3>社内ナレッジ検索（軽量）</h3>
+                    <span class="badge badge-data">Data</span>
+                  </div>
+                  <p>
+                    散らばった資料を横断し、必要な情報へすぐに辿り着くための軽量な検索導線を作ります。
+                  </p>
+                  <ul class="feature-list">
+                    <li>複数の保管場所をまとめて検索</li>
+                    <li>重要情報の抜粋とハイライト</li>
+                    <li>社内ルールに合わせた簡易権限設計</li>
+                  </ul>
+                  <button class="detail-toggle" type="button">イメージを見る</button>
+                </div>
+                <div class="detail-card-face detail-card-back">
+                  <img
+                    src="assets/poc-preview.svg"
+                    alt="ナレッジ検索のプロダクトイメージ"
+                  />
+                  <button class="detail-toggle detail-toggle-back" type="button">戻る</button>
+                </div>
               </div>
-              <p>
-                散らばった資料を横断し、必要な情報へすぐに辿り着くための軽量な検索導線を作ります。
-              </p>
-              <ul class="feature-list">
-                <li>複数の保管場所をまとめて検索</li>
-                <li>重要情報の抜粋とハイライト</li>
-                <li>社内ルールに合わせた簡易権限設計</li>
-              </ul>
             </article>
             <article id="detail-report" class="detail-card">
-              <div class="detail-header">
-                <h3>定型レポート自動生成</h3>
-                <span class="badge">AI</span>
+              <div class="detail-card-inner">
+                <div class="detail-card-face detail-card-front">
+                  <div class="detail-header">
+                    <h3>定型レポート自動生成</h3>
+                    <span class="badge">AI</span>
+                  </div>
+                  <p>
+                    定型レポートの更新を自動化し、確認と判断に時間を使えるようにします。
+                  </p>
+                  <ul class="feature-list">
+                    <li>定期更新に合わせた自動生成</li>
+                    <li>編集しやすいテキスト/表の両対応</li>
+                    <li>数値の変化を言語化して補足</li>
+                  </ul>
+                  <button class="detail-toggle" type="button">イメージを見る</button>
+                </div>
+                <div class="detail-card-face detail-card-back">
+                  <img
+                    src="assets/poc-preview.svg"
+                    alt="レポート生成のプロダクトイメージ"
+                  />
+                  <button class="detail-toggle detail-toggle-back" type="button">戻る</button>
+                </div>
               </div>
-              <p>
-                定型レポートの更新を自動化し、確認と判断に時間を使えるようにします。
-              </p>
-              <ul class="feature-list">
-                <li>定期更新に合わせた自動生成</li>
-                <li>編集しやすいテキスト/表の両対応</li>
-                <li>数値の変化を言語化して補足</li>
-              </ul>
             </article>
             <article id="detail-quality-check" class="detail-card">
-              <div class="detail-header">
-                <h3>データ品質チェック/異常検知（軽量）</h3>
-                <span class="badge badge-data">Data</span>
+              <div class="detail-card-inner">
+                <div class="detail-card-face detail-card-front">
+                  <div class="detail-header">
+                    <h3>データ品質チェック/異常検知（軽量）</h3>
+                    <span class="badge badge-data">Data</span>
+                  </div>
+                  <p>
+                    分析前のチェックを自動化し、異常値や欠損の発見を早めます。
+                  </p>
+                  <ul class="feature-list">
+                    <li>欠損・重複・外れ値の検知</li>
+                    <li>簡易アラートで担当者へ共有</li>
+                    <li>ログの把握と改善の履歴化</li>
+                  </ul>
+                  <button class="detail-toggle" type="button">イメージを見る</button>
+                </div>
+                <div class="detail-card-face detail-card-back">
+                  <img
+                    src="assets/poc-preview.svg"
+                    alt="品質チェックのプロダクトイメージ"
+                  />
+                  <button class="detail-toggle detail-toggle-back" type="button">戻る</button>
+                </div>
               </div>
-              <p>
-                分析前のチェックを自動化し、異常値や欠損の発見を早めます。
-              </p>
-              <ul class="feature-list">
-                <li>欠損・重複・外れ値の検知</li>
-                <li>簡易アラートで担当者へ共有</li>
-                <li>ログの把握と改善の履歴化</li>
-              </ul>
             </article>
             <article id="detail-file-tag" class="detail-card">
-              <div class="detail-header">
-                <h3>ファイル/命名/タグ整理支援</h3>
-                <span class="badge badge-utility">Utility</span>
+              <div class="detail-card-inner">
+                <div class="detail-card-face detail-card-front">
+                  <div class="detail-header">
+                    <h3>ファイル/命名/タグ整理支援</h3>
+                    <span class="badge badge-utility">Utility</span>
+                  </div>
+                  <p>
+                    ファイルやタグの整理ルールを整え、探す時間を削減します。
+                  </p>
+                  <ul class="feature-list">
+                    <li>命名ルールの提案と自動整形</li>
+                    <li>重複タグや不要タグの整理</li>
+                    <li>検索しやすい整理結果を出力</li>
+                  </ul>
+                  <button class="detail-toggle" type="button">イメージを見る</button>
+                </div>
+                <div class="detail-card-face detail-card-back">
+                  <img
+                    src="assets/poc-preview.svg"
+                    alt="タグ整理のプロダクトイメージ"
+                  />
+                  <button class="detail-toggle detail-toggle-back" type="button">戻る</button>
+                </div>
               </div>
-              <p>
-                ファイルやタグの整理ルールを整え、探す時間を削減します。
-              </p>
-              <ul class="feature-list">
-                <li>命名ルールの提案と自動整形</li>
-                <li>重複タグや不要タグの整理</li>
-                <li>検索しやすい整理結果を出力</li>
-              </ul>
             </article>
             <article id="detail-form-triage" class="detail-card">
-              <div class="detail-header">
-                <h3>フォーム入力・問い合わせ分類</h3>
-                <span class="badge badge-utility">Utility</span>
+              <div class="detail-card-inner">
+                <div class="detail-card-face detail-card-front">
+                  <div class="detail-header">
+                    <h3>フォーム入力・問い合わせ分類</h3>
+                    <span class="badge badge-utility">Utility</span>
+                  </div>
+                  <p>
+                    問い合わせや申請を分類し、対応フローを整えます。
+                  </p>
+                  <ul class="feature-list">
+                    <li>よくある分類パターンを整理</li>
+                    <li>担当部署への自動仕分け</li>
+                    <li>優先度判定の補助</li>
+                  </ul>
+                  <button class="detail-toggle" type="button">イメージを見る</button>
+                </div>
+                <div class="detail-card-face detail-card-back">
+                  <img
+                    src="assets/poc-preview.svg"
+                    alt="問い合わせ分類のプロダクトイメージ"
+                  />
+                  <button class="detail-toggle detail-toggle-back" type="button">戻る</button>
+                </div>
               </div>
-              <p>
-                問い合わせや申請を分類し、対応フローを整えます。
-              </p>
-              <ul class="feature-list">
-                <li>よくある分類パターンを整理</li>
-                <li>担当部署への自動仕分け</li>
-                <li>優先度判定の補助</li>
-              </ul>
             </article>
             <article id="detail-dashboard" class="detail-card">
-              <div class="detail-header">
-                <h3>小規模ダッシュボード（KPI可視化）</h3>
-                <span class="badge badge-data">Data</span>
+              <div class="detail-card-inner">
+                <div class="detail-card-face detail-card-front">
+                  <div class="detail-header">
+                    <h3>小規模ダッシュボード（KPI可視化）</h3>
+                    <span class="badge badge-data">Data</span>
+                  </div>
+                  <p>
+                    必要なKPIに絞ったダッシュボードを素早く構築し、状況把握を容易にします。
+                  </p>
+                  <ul class="feature-list">
+                    <li>意思決定に必要な指標を厳選</li>
+                    <li>軽量なUIで更新頻度を保つ</li>
+                    <li>メモや補足情報を添えられる設計</li>
+                  </ul>
+                  <button class="detail-toggle" type="button">イメージを見る</button>
+                </div>
+                <div class="detail-card-face detail-card-back">
+                  <img
+                    src="assets/poc-preview.svg"
+                    alt="ダッシュボードのプロダクトイメージ"
+                  />
+                  <button class="detail-toggle detail-toggle-back" type="button">戻る</button>
+                </div>
               </div>
-              <p>
-                必要なKPIに絞ったダッシュボードを素早く構築し、状況把握を容易にします。
-              </p>
-              <ul class="feature-list">
-                <li>意思決定に必要な指標を厳選</li>
-                <li>軽量なUIで更新頻度を保つ</li>
-                <li>メモや補足情報を添えられる設計</li>
-              </ul>
             </article>
             <article id="detail-poc-api" class="detail-card">
-              <div class="detail-header">
-                <h3>PoC用API/ミニWeb UI</h3>
-                <span class="badge">AI</span>
+              <div class="detail-card-inner">
+                <div class="detail-card-face detail-card-front">
+                  <div class="detail-header">
+                    <h3>PoC用API/ミニWeb UI</h3>
+                    <span class="badge">AI</span>
+                  </div>
+                  <p>
+                    小さなAPIやUIで素早く検証し、本格運用に向けた要件を明確にします。
+                  </p>
+                  <ul class="feature-list">
+                    <li>検証に必要な最小機能を設計</li>
+                    <li>現場で使えるフィードバックを収集</li>
+                    <li>次の開発フェーズへ繋げる整理</li>
+                  </ul>
+                  <button class="detail-toggle" type="button">イメージを見る</button>
+                </div>
+                <div class="detail-card-face detail-card-back">
+                  <img
+                    src="assets/poc-preview.svg"
+                    alt="PoC用APIのプロダクトイメージ"
+                  />
+                  <button class="detail-toggle detail-toggle-back" type="button">戻る</button>
+                </div>
               </div>
-              <p>
-                小さなAPIやUIで素早く検証し、本格運用に向けた要件を明確にします。
-              </p>
-              <ul class="feature-list">
-                <li>検証に必要な最小機能を設計</li>
-                <li>現場で使えるフィードバックを収集</li>
-                <li>次の開発フェーズへ繋げる整理</li>
-              </ul>
             </article>
           </div>
         </div>
@@ -378,7 +467,6 @@
           </div>
           <div class="section-body">
             <p>
-              はじめまして。Fluxia合同会社 代表社員の原 朋史です。
               私は、「面白いアイデアや技術が、そのまま終わってしまうこと」にずっと違和感を持ってきました。
             </p>
             <p>
@@ -390,6 +478,7 @@
               完全でなくてもいい。まずは形にする。そこから学び、次につなげる。
               これからも、好奇心を起点に、実装を通じて、価値と体験を静かに広げていきます。
             </p>
+            <p class="message-signature">Fluxia合同会社　代表　原 朋史</p>
           </div>
         </div>
       </section>
@@ -409,5 +498,15 @@
         </div>
       </div>
     </footer>
+    <script>
+      document.querySelectorAll(".detail-card").forEach((card) => {
+        card.querySelectorAll(".detail-toggle").forEach((button) => {
+          button.addEventListener("click", (event) => {
+            event.preventDefault();
+            card.classList.toggle("is-flipped");
+          });
+        });
+      });
+    </script>
   </body>
 </html>
