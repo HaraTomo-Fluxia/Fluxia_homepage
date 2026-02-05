@@ -18,11 +18,6 @@
       <div class="container header-inner">
         <div class="logo-wrap">
           <img
-            class="logo-mark"
-            src="assets/logos/fluxia-logo-icon.png"
-            alt="Fluxia ロゴアイコン"
-          />
-          <img
             class="logo-type"
             src="assets/logos/fluxia-logo-horizontal.png"
             alt="Fluxia ロゴ（横長）"
@@ -101,10 +96,10 @@
                 AIは、単なる自動化の手段ではなく、人の理解や発想の幅を拡張するための道具だと考えています。
                 Fluxiaでは、情報を扱いやすくし、考える余地を増やす形でシステムに組み込みます。
               </p>
-              <ul>
-                <li>人の判断や創造を補助する</li>
-                <li>これまで手が届かなかった体験を可能にする</li>
-                <li>技術が前に出すぎず、自然に使われる形を重視</li>
+              <ul class="feature-list">
+                <li>AIを見せるより、自然に使われ意味を持つ形で動くことを重視</li>
+                <li>テキスト・画像・ログなど多様な情報をまとめて扱える構成</li>
+                <li>PoCからプロトタイプ、実運用を見据えた構成まで伴走</li>
               </ul>
             </article>
             <article class="card">
@@ -113,10 +108,22 @@
                 データ分析は、世界を少し解像度高く見るための手段です。気づかれていない傾向や、
                 次の一歩につながるヒントを整理し、意思決定やプロダクトの方向性を自然と見えてくる形へ。
               </p>
-              <ul>
-                <li>言語化されていない構造を整理</li>
-                <li>分析結果を体験やシステムへ接続</li>
-                <li>資料で終わらせず、実装まで伴走</li>
+              <ul class="feature-list">
+                <li>お客様がすでに持つデータから、傾向/構造/次の一手のヒントを発見</li>
+                <li>分析結果を体験やシステムへ接続し、実装まで伴走</li>
+                <li>分析は資料で終わらせず、改善のサイクルにつなげる</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>アプリ開発・実装支援</h3>
+              <p>
+                体験を形にするためのUI/UX設計からアプリ実装まで、一貫して進めます。
+                AIやデータの結果が、現場で使われる動線に落ちることを重視します。
+              </p>
+              <ul class="feature-list">
+                <li>プロダクト構想の整理と体験設計の具体化</li>
+                <li>軽量な実装で検証し、使いながら改善</li>
+                <li>教育・エンタメ領域のプロトタイプにも対応</li>
               </ul>
             </article>
           </div>
@@ -145,10 +152,10 @@
                 教育とエンターテインメントは本来対立しません。学ぶことが楽しくなれば、
                 人は自発的に知ろうとし、世界の見え方が変わっていきます。
               </p>
-              <ul>
-                <li>学びの入口を広げること</li>
-                <li>知的好奇心が自然に育つ体験を作ること</li>
-                <li>年齢や専門を問わず、学びに触れられる環境を作ること</li>
+              <ul class="feature-list">
+                <li>学びの入口を広げ、知的好奇心が育つ体験をつくる</li>
+                <li>年齢や専門を問わず学びに触れられる設計</li>
+                <li>エンタメとして始まった体験が学びにつながる導線</li>
               </ul>
             </div>
           </div>
@@ -161,21 +168,71 @@
             <p class="eyebrow">業務効率化・PoC</p>
             <h2>実装を通じて、考える時間を取り戻す。</h2>
           </div>
-          <div class="cards">
-            <article class="card">
-              <h3>業務効率化・PoCプロダクト</h3>
-              <p>
-                情報の扱い方を変え、考える時間を取り戻す。そのための小さな仕組みを、
-                必要に応じて設計・実装します。完成品ありきではなく、作りながら最適な形を探すことを前提に。
-              </p>
+          <div class="section-body section-body-wide">
+            <p>
+              情報の扱い方を変え、考える時間を取り戻す。そのための小さな仕組みを、
+              必要に応じて設計・実装します。完成品ありきではなく、作りながら最適な形を探すことを前提に。
+            </p>
+            <p class="muted-note">
+              位置づけ: 情報の扱い方を変える / 考える時間を取り戻す / 集中できるようにする
+            </p>
+          </div>
+          <div class="catalog-grid">
+            <article class="catalog-card">
+              <div class="catalog-header">
+                <h3>AI要約・整理（議事録/資料）</h3>
+                <span class="badge">AI</span>
+              </div>
+              <p>会議ログや資料を要点整理し、次のアクションが見える形へ整えます。</p>
             </article>
-            <article class="card">
-              <h3>PoCプロダクト例</h3>
-              <ul>
-                <li>AIによるデータ整理・要約ツール</li>
-                <li>定型業務を補助する軽量アプリ</li>
-                <li>業務フローの一部を検証する試作システム</li>
-              </ul>
+            <article class="catalog-card">
+              <div class="catalog-header">
+                <h3>社内ナレッジ検索（軽量）</h3>
+                <span class="badge badge-data">Data</span>
+              </div>
+              <p>散在するドキュメントを横断し、必要な情報にすぐ辿り着ける仕組み。</p>
+            </article>
+            <article class="catalog-card">
+              <div class="catalog-header">
+                <h3>定型レポート自動生成</h3>
+                <span class="badge">AI</span>
+              </div>
+              <p>週次・月次のレポート作成を自動化し、編集の手間を減らします。</p>
+            </article>
+            <article class="catalog-card">
+              <div class="catalog-header">
+                <h3>データ品質チェック/異常検知（軽量）</h3>
+                <span class="badge badge-data">Data</span>
+              </div>
+              <p>異常値や欠損を早期に発見し、分析前の確認作業をスムーズに。</p>
+            </article>
+            <article class="catalog-card">
+              <div class="catalog-header">
+                <h3>ファイル/命名/タグ整理支援</h3>
+                <span class="badge badge-utility">Utility</span>
+              </div>
+              <p>ルールに沿って整理し、探す時間を減らす軽量な支援機能。</p>
+            </article>
+            <article class="catalog-card">
+              <div class="catalog-header">
+                <h3>フォーム入力・問い合わせ分類</h3>
+                <span class="badge badge-utility">Utility</span>
+              </div>
+              <p>入力内容を自動で分類し、対応フローを整理しやすくします。</p>
+            </article>
+            <article class="catalog-card">
+              <div class="catalog-header">
+                <h3>小規模ダッシュボード（KPI可視化）</h3>
+                <span class="badge badge-data">Data</span>
+              </div>
+              <p>必要最小限のKPIを見える化し、意思決定の入口を整えます。</p>
+            </article>
+            <article class="catalog-card">
+              <div class="catalog-header">
+                <h3>PoC用API/ミニWeb UI</h3>
+                <span class="badge">AI</span>
+              </div>
+              <p>小さなAPIやUIで検証し、実運用へ向けた要件を固めます。</p>
             </article>
           </div>
         </div>
